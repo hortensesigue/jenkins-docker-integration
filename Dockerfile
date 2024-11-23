@@ -4,7 +4,7 @@ LABEL maintainer="cloudspace"
 
 RUN apt -y update && apt clean all
 
-RUN apt install apache2
+RUN apt -y install apache2 
 
 COPY index.html /var/www/html
 
