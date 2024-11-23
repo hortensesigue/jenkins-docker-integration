@@ -2,9 +2,9 @@ FROM ubuntu
 
 LABEL maintainer="cloudspace"
 
-RUN yum -y update && yum clean all
+RUN apt -y update && apt clean all
 
-RUN yun install httpd
+RUN apt install apache2
 
 COPY index.html /var/www/html
 
